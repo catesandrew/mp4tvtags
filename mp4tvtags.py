@@ -503,6 +503,7 @@ def main():
         #end if not result
         
         series = str(result.group("series"))
+        series = re.sub(" and ", " ", series)
         seasonNumber = result.group("seasonNumber")
         
         episodeNumbersString = result.group("episodeNumbers")
